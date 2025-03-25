@@ -10,9 +10,10 @@ interface Props {
     width: number;
     height: number;
     index: number;
+    value: string;
 }
 
-const SkillDataProvider = ({ src, width, height, index }: Props) => {
+const SkillDataProvider = ({ value, src, width, height, index }: Props) => {
     const { ref, inView } = useInView({
         triggerOnce: true
     })
@@ -31,6 +32,7 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
             animate={inView ? "visible" : "hidden"}
             custom={index}
             transition={{ delay: index * animationDelay }}
+            className='flex flex-col justify-center items-center'
         >
             <img
                 src={src}
@@ -38,6 +40,11 @@ const SkillDataProvider = ({ src, width, height, index }: Props) => {
                 height={height}
                 alt='skill image'
             />
+            <span className="mt-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                {" "}
+                {value}
+            </span>
+
         </motion.div>
     )
 }

@@ -2,6 +2,7 @@ import CodeBlock from "./components/CodeBlock"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Skills from "./components/Skills"
+import WorkExperience from "./components/WorkEx"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Hero/>
         <CodeBlock/>
         <Skills/>
+        <WorkExperience/>
       </div>
     </div>
    

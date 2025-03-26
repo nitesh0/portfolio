@@ -1,6 +1,8 @@
+import AchievementsSection from "./components/AchievementsSection"
 import CodeBlock from "./components/CodeBlock"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import WorkExperience from "./components/WorkEx"
 
@@ -15,6 +17,8 @@ function App() {
         <CodeBlock/>
         <Skills/>
         <WorkExperience/>
+        <Projects />
+        <AchievementsSection/>
       </div>
     </div>
    

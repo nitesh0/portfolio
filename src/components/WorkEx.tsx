@@ -32,10 +32,10 @@ const WorkExperience = () => {
             color: "#E82127",
             responsibilities: [
                 "Implemented a security feature to check the PAN-Aadhaar linking status, allowing users to verify whether their PAN card is operative or inoperative, in compliance with government regulations.",
-                "Resolved real-time bugs on the Income Tax website, addressing issues related to PAN linking errors and improving user experience.", 
+                "Resolved real-time bugs on the Income Tax website, addressing issues related to PAN linking errors and improving user experience.",
                 "Assisted approximately 7.77 crore taxpayers during peak filing periods, ensuring successful tax payments.",
                 "Led end-to-end SDLC processes, from design through development, testing, deployment, and ongoing maintenance, ensuring quality and timely delivery.",
-                
+
             ],
             skills: ["Java", "Spring", "PostgreSQL", "Git", "Dbeaver"],
         },
@@ -63,12 +63,11 @@ const WorkExperience = () => {
                     </motion.span>
                 </motion.h1>
 
-                <div className="relative">
-                    {/* Animated timeline line */}
+                <div className="relative flex flex-col gap-y-32">
                     <motion.div
                         className="absolute left-[25px] md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-[2px] bg-gray-700"
                         style={{
-                            height: "calc(100px * 8.5)",
+                            height: "calc(100px * 8)",
                             scaleY: scrollYProgress,
                             originY: 0,
                         }}
@@ -78,6 +77,7 @@ const WorkExperience = () => {
                         <ExperienceCard key={index} experience={exp} index={index} scrollYProgress={scrollYProgress} />
                     ))}
                 </div>
+
             </div>
         </div>
 
@@ -111,7 +111,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
     return (
         <motion.div
             ref={cardRef}
-            className={` relative mb-32 flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
+            className={` relative flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
             style={{ y }}
         >
             <motion.div
@@ -317,7 +317,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
                         animate={{ y: isExpanded ? -2 : 2 }}
                         transition={{ repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", duration: 0.5 }}
                     > */}
-                        {/* {isExpanded ? "↑" : "↓"} */}
+                    {/* {isExpanded ? "↑" : "↓"} */}
                     {/* </motion.span> */}
                 </motion.button>
             </motion.div>

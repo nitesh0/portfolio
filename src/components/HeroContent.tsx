@@ -48,11 +48,13 @@ const HeroContent = () => {
                     , a Full-Stack Software Engineer who loves crafting blazing-fast web apps, automating workflows with seamless API integrations, and building my own AI-powered tools. I thrive on creating stunning user experiences that don’t just look great—they make you go WOW! 🚀
                 </motion.p>
                 <motion.a
-                    variants={slideInFromLeft(1)}
-                    className="py-1 button-primary text-center text-white border border-[#7042f88b] cursor-pointer rounded-lg max-w-[200px]"
-                >
-                    Let's Work!
-                </motion.a>
+  variants={slideInFromLeft(1)}
+  href="mailto:niteshsinghal9@gmail.com"
+  className="py-1 button-primary text-center text-white border border-[#7042f88b] cursor-pointer rounded-lg max-w-[200px]"
+>
+  Let's Work!
+</motion.a>
+
             </div>
 
             <motion.div

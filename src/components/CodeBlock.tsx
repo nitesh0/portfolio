@@ -5,7 +5,8 @@ import About from "./About";
 
 const CodeBlock = () => {
     return (
-        <div className="flex flex-row justify-between w-full">
+        <div id='about' className="flex flex-row justify-between w-full">
+
             <motion.div
                 initial={{ opacity: 1, y: 1 }} // Start position
                 animate={{ opacity: 1, y: [0, -6, 0] }} // Moves up and down

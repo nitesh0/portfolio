@@ -75,7 +75,8 @@ const AchievementsSection = () => {
     ]
 
     return (
-        <div
+
+        <div id="achievements"
             ref={sectionRef}
             className="min-h-screen flex flex-col items-center justify-center py-16 px-4 md:px-8 relative overflow-hidden"
             style={{

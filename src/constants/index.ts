@@ -53,12 +53,7 @@ export const Skill_data = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "React Query",
-    Image: "/reactquery.png",
-    width: 80,
-    height: 80,
-  },
+  
   {
     skill_name: "Zustand",
     Image: "/zustand.png",

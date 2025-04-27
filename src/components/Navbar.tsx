@@ -2,7 +2,6 @@
 // import Image from "next/image";
 import React from "react";
 import { motion } from 'framer-motion'
-import { Socials } from "../constants";
 const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 border border-[#7042f861] rounded-full mt-4">
@@ -35,18 +34,21 @@ const Navbar = () => {
         </a>
 
         <div className="w-[700px] h-full flex flex-row items-center justify-between gap-10 text-gray-200 ml-auto pr-0">
-          <a href="#about-me" className="cursor-pointer">About me</a>
+          <a href="#about" className="cursor-pointer">About me</a>
           <a href="#skills" className="cursor-pointer">Skills</a>
-          <a href="#projects" className="cursor-pointer">Work Experience</a>
+          <a href="#WorkExperience" className="cursor-pointer">Work Experience</a>
           <a href="#projects" className="cursor-pointer">Projects</a>
-          <a href="#projects" className="cursor-pointer">Achievements</a>
+          <a href="#achievements" className="cursor-pointer">Achievements</a>
           <img
-            src="/gitwhite.png"
-            alt="logo"
-            width={30}
-            height={30}
-            className="cursor-pointer hover:animate-slowspin"
-          />
+  src="/gitwhite.png"
+  alt="logo"
+  width={30}
+  height={30}
+  className="cursor-pointer hover:animate-slowspin"
+  onClick={() => window.open("https://github.com/nitesh0", "_blank")}
+
+/>
+
         </div>
 
 

@@ -7,7 +7,8 @@ const About = () => {
         "Mentoring and collaborating in teams",
     ];
     return (
-        <div className='text-blue-400 text-wrap m-10 mr-40'>
+        <div  className='text-blue-400 text-wrap m-10 mr-40'>
+            
             <div className="flex flex-col md:flex-row gap-6">
 
                 <div className="md:max-w-lg space-y-4">
@@ -69,6 +70,7 @@ const About = () => {
                 </div>
 
             </div>
+
         </div>
     )
 }

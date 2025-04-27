@@ -42,8 +42,9 @@ const WorkExperience = () => {
     ];
 
     return (
+        <section id="WorkExperience">
         <div className="min-h-screen flex flex-col items-center justify-center bg-[#0a0a14] p-4 md:p-8 overflow-hidden" ref={containerRef}>
-            <div className="max-w-5xl w-full flex flex-col items-center text-center">
+            <div className="max-w-5xl w-full flex flex-col items-center text-start">
                 <motion.h1
                     className="text-5xl font-bold text-white mb-28"
                     initial={{ opacity: 0, y: -50 }}
@@ -80,7 +81,7 @@ const WorkExperience = () => {
 
             </div>
         </div>
-
+        </section>
     );
 };
 
@@ -115,7 +116,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
             style={{ y }}
         >
             <motion.div
-                className="absolute left-20 md:left-[47.5%] transform md:-translate-x-1/2 w-[50px] h-[50px] rounded-full bg-gray-800 border-2 flex items-center justify-center z-10 mr-20"
+                className="absolute left-20 md:left-[47.5%] transform md:-translate-x-1/2 w-[50px] h-[50px] rounded-full bg-gray-800 border-2 flex items-start justify-start z-10 mr-20"
                 style={{
                     borderColor: isInView ? experience.color : "rgba(75, 85, 99, 0.6)",
                     boxShadow: isInView ? `0 0 15px ${experience.color}` : "none",
@@ -235,7 +236,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
                     {experience.responsibilities.map((resp, idx) => (
                         <motion.li
                             key={idx}
-                            className="flex items-start"
+                            className="flex justify-start items-start"
                             initial={{ opacity: 0, x: -20 }}
                             animate={isInView ? { opacity: 1, x: 0 } : {}}
                             transition={{
@@ -246,7 +247,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
                             whileHover={{ x: 5, color: "white" }}
                         >
                             <motion.span
-                                className="mr-2 text-lg"
+                                className="text-lg"
                                 style={{ color: experience.color }}
                                 animate={{
                                     scale: [1, 1.2, 1],
@@ -261,7 +262,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
                             >
                                 •
                             </motion.span>
-                            <span className="text-gray-300 text-sm">{resp}</span>
+                            <span className="text-gray-300 text-sm flex items-start justify-start">{resp}</span>
                         </motion.li>
                     ))}
                 </motion.ul>
@@ -303,23 +304,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
                     )}
                 </AnimatePresence>
 
-                <motion.button
-                    className="mt-4 text-xs flex items-center gap-1"
-                    style={{ color: experience.color }}
-                    whileHover={{ scale: 1.05 }}
-                    initial={{ opacity: 0 }}
-                    animate={isInView ? { opacity: 1 } : {}}
-                    transition={{ delay: 1 }}
-                    onClick={() => setIsExpanded(!isExpanded)}
-                >
-                    {/* {isExpanded ? "View less" : "View skills"} */}
-                    {/* <motion.span
-                        animate={{ y: isExpanded ? -2 : 2 }}
-                        transition={{ repeat: Number.POSITIVE_INFINITY, repeatType: "reverse", duration: 0.5 }}
-                    > */}
-                    {/* {isExpanded ? "↑" : "↓"} */}
-                    {/* </motion.span> */}
-                </motion.button>
+                
             </motion.div>
         </motion.div>
     );

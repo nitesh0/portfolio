@@ -104,7 +104,7 @@ type ExperienceCardProps = {
 const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardProps) => {
     const cardRef = useRef(null);
     const isInView = useInView(cardRef, { once: false, amount: 0.3 });
-    const [isExpanded, setIsExpanded] = useState(true);
+    const [isExpanded] = useState(true);
     console.log(isExpanded)
     const y = useTransform(scrollYProgress, [index * 0.3, (index) * 0.3], [50, -50]);
 

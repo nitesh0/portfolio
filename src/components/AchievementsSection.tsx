@@ -1,7 +1,5 @@
-"use client"
-
 import { motion, useInView } from "framer-motion"
-import { Award, Code, Database, FileCode, Github, Globe, Star, Trophy } from "lucide-react"
+import { Code, Database, Github, Star } from "lucide-react"
 import { useRef, useState } from "react"
 
 const AchievementsSection = () => {

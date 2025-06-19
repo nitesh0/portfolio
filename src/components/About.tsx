@@ -1,11 +1,7 @@
-import React from 'react'
-import { Award, Briefcase, ChevronRight } from "lucide-react";
+
+import { Award, Briefcase } from "lucide-react";
 const About = () => {
-    const uses = [
-        "Building scalable applications",
-        "Contributing to open-source projects",
-        "Mentoring and collaborating in teams",
-    ];
+    
     return (
         <div  className='text-blue-400 text-wrap m-10 mr-40'>
             

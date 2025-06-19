@@ -20,17 +20,7 @@ const AchievementsSection = () => {
             badgeColor: "#C0C0C0", // Silver
             badgeIcon: Star,
             skills: ["Database Design", "Query Optimization", "Data Manipulation", "Joins & Subqueries"],
-        },
-        {
-            icon: FileCode,
-            title: "Python Silver Badge",
-            platform: "HackerRank",
-            description:
-                "Achieved Silver Badge status in Python programming challenges, showcasing strong algorithmic thinking and problem-solving skills.",
-            color: "#9D50BB", // Purple
-            badgeColor: "#C0C0C0", // Silver
-            badgeIcon: Star,
-            skills: ["Data Structures", "Algorithms", "OOP", "Python Libraries"],
+            
         },
         {
             icon: Code,
@@ -42,36 +32,20 @@ const AchievementsSection = () => {
             badgeColor: "#C0C0C0", // Silver
             badgeIcon: Star,
             skills: ["Component Architecture", "State Management", "Hooks", "Performance Optimization"],
+            
         },
         {
             icon: Github,
-            title: "Open Source Contributions",
+            title: "Open Source Contribution",
             platform: "GitHub",
             description:
-                "Contributed to multiple open-source projects, helping improve documentation and implementing new features.",
+                "Contributed to open-source PYCON India 2025, helping improve Webiste and implementing new features.",
             color: "#4A00E0", // Deep purple
             badgeIcon: Code,
-            skills: ["Collaboration", "Code Reviews", "Git Workflow", "Documentation"],
+            skills: ["Collaboration", "Code Reviews", "Git Workflow"],
         },
-        {
-            icon: Globe,
-            title: "Technical Blog",
-            platform: "Medium",
-            description:
-                "Published technical articles on web development and AI integration that have helped thousands of developers.",
-            color: "#8E2DE2", // Violet
-            badgeIcon: Award,
-            skills: ["Technical Writing", "Knowledge Sharing", "Web Development", "AI Integration"],
-        },
-        {
-            icon: Trophy,
-            title: "Hackathon Winner",
-            platform: "TechFest 2023",
-            description: "First place in a 48-hour hackathon for developing an innovative AI-powered solution.",
-            color: "#5E35B1", // Deep purple-blue
-            badgeIcon: Award,
-            skills: ["Rapid Prototyping", "Team Collaboration", "Problem Solving", "Presentation Skills"],
-        },
+        
+        
     ]
 
     return (

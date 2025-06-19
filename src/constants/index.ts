@@ -35,12 +35,12 @@ export const Skill_data = [
     width: 80,
     height: 80,
   },
-  {
-    skill_name: "Framer Motion",
-    Image: "/framer.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "Framer Motion",
+  //   Image: "/framer.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "React",
     Image: "/react.png",
@@ -100,12 +100,12 @@ export const Skill_data = [
     height: 70,
   },
 
-  {
-    skill_name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
-  },
+  // {
+  //   skill_name: "Mongo db",
+  //   Image: "/mongodb.png",
+  //   width: 40,
+  //   height: 40,
+  // },
   {
     skill_name: "Docker",
     Image: "/docker.webp",

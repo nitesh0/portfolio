@@ -16,11 +16,10 @@ const WorkExperience = () => {
             logo: "/infosys.jpg",
             color: "#00704A",
             responsibilities: [
-                "Developed and maintained responsive web applications using React.js, Redux, and modern JavaScript libraries, ensuring seamless performance across devices.",
+                "Developed and maintained responsive web applications using React.js and modern JavaScript libraries, ensuring seamless performance across devices.",
                 " Achieved 95% compatibility across devices and optimized application performance by 30%.",
-                // "Collaborating with cross-functional teams.",
                 "Worked with micro-frontend architecture to integrate independent modules, enhancing scalability and maintain ability",
-                "Led and mentored a team of 3 developers managing sprint planning and execution using Agile methodologies",
+                "Led and mentored a team of 3 developers, providing guidance in learning and developing complex components. Ensuring successful delivery of high-quality solutions.",
             ],
             skills: ["React.js", "Redux", "JavaScript", "HTML/CSS", "Git", "Material-UI"],
         },
@@ -31,10 +30,10 @@ const WorkExperience = () => {
             logo: "/infosys.jpg",
             color: "#E82127",
             responsibilities: [
-                "Implemented a security feature to check the PAN-Aadhaar linking status, allowing users to verify whether their PAN card is operative or inoperative, in compliance with government regulations.",
+                "Implemented a security feature to verify PAN-Aadhaar linking status, allowing users to check whether their PAN card is operative or inoperative. This solution was developed in compliance with government regulations and enhanced user security.",
                 "Resolved real-time bugs on the Income Tax website, addressing issues related to PAN linking errors and improving user experience.",
                 "Assisted approximately 7.77 crore taxpayers during peak filing periods, ensuring successful tax payments.",
-                "Led end-to-end SDLC processes, from design through development, testing, deployment, and ongoing maintenance, ensuring quality and timely delivery.",
+                "Received client appreciation for exceptional team support during the peak filing period, where the team promptly resolved critical issues, ensuring smooth operations and customer satisfaction."
 
             ],
             skills: ["Java", "Spring", "PostgreSQL", "Git", "Dbeaver"],
@@ -139,6 +138,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
                 <motion.div
                     animate={{
                         scale: [1, 1.1],
+                        
                     }}
                     transition={{
                         duration: 2,
@@ -152,6 +152,7 @@ const ExperienceCard = ({ experience, index, scrollYProgress }: ExperienceCardPr
                         width={50}
                         height={50}
                         className="rounded-full"
+                        style={{ transform: 'rotate(-10deg)' }}
                     />
                 </motion.div>
             </motion.div>

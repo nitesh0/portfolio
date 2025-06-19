@@ -5,7 +5,7 @@ import About from "./About";
 
 const CodeBlock = () => {
     return (
-        <div id='about' className="flex flex-row justify-between w-full">
+        <div id='about' className="flex flex-col md:flex-row justify-between w-full">
 
             <motion.div
                 initial={{ opacity: 1, y: 1 }} // Start position
@@ -45,9 +45,9 @@ const CodeBlock = () => {
                         {"\n    | "}
                         <span className="text-green-400">'display my skills'</span>
                         {"\n    | "}
-                        <span className="text-green-400">'find freelancing opportunities'</span>
+                        <span className="text-green-400">'build my professional network'</span>
                         {"\n    | "}
-                        <span className="text-green-400">'find a fulltime job'</span>;
+                        <span className="text-green-400">'challenge myself with new technologies'</span>;
                         {"\n};\n\n"}
                         <span className="text-pink-400">export const</span> Welcome: FC
                         {"<WelcomeProps>"} = ({"{ uses }"}) {"=> {"}
@@ -71,6 +71,7 @@ const CodeBlock = () => {
                     </pre>
                 </div>
             </motion.div>
+            
             <About />
         </div>
 

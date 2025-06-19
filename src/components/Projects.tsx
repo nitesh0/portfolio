@@ -57,9 +57,9 @@ const Projects = () => {
           },
           {
             src: "/careersuite.png",
-            title: "CareerSuite",
+            title: "SkillPath AI Platform",
             description:
-              "CareerSuite is an AI-powered platform designed to help users and advance their careers efficiently. Users can select or input the skills they want to develop or focus on. The platform analyzes these inputs and generates a personalized career plan — outlining learning paths, and growth milestones.",
+              "It is an AI-powered platform designed to help users and advance their careers efficiently. Users can select or input the skills they want to develop or focus on. The platform analyzes these inputs and generates a personalized career plan — outlining learning paths, and growth milestones.",
           },
           
           {

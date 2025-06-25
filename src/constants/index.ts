@@ -112,6 +112,18 @@ export const Skill_data = [
     width: 70,
     height: 70,
   },
+  {
+    skill_name: "Vercel",
+    Image: "/vercel.png",
+    width: 70,
+    height: 70,
+  },
+  {
+    skill_name: "Railway",
+    Image: "/railway.png",
+    width: 70,
+    height: 70,
+  },
 
 ];
 

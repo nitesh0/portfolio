@@ -3,12 +3,12 @@ import { Award, Briefcase } from "lucide-react";
 const About = () => {
     
     return (
-        <div  className='text-blue-400 text-wrap m-10 mr-40'>
+        <div  className='text-blue-400 text-wrap m-10 mr-20 flex flex-col items-center md:items-start'>
             
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
 
                 <div className="md:max-w-lg space-y-4">
-                    <h2 className="text-2xl font-bold text-blue-400">Full Stack Developer</h2>
+                    <h2 className="text-2xl font-bold text-blue-400">Full Stack Engineer</h2>
                     <div className="flex gap-2 mb-3">
                         <span className="bg-blue-600 text-xs font-semibold px-2 py-1 rounded-lg text-sky-200">
                             Team Work
@@ -28,7 +28,7 @@ const About = () => {
                     </div>
                     <div className="prose prose-invert max-w-none">
                         <p className="text-gray-300 leading-relaxed">
-                            I'm a passionate Full Stack Developer with over 3 years of experience crafting robust digital
+                            I'm a passionate Full Stack Engineer with over 3 years of experience crafting robust digital
                             solutions. My expertise spans building scalable backend systems and creating intuitive,
                             user-friendly frontend experiences.
                         </p>
@@ -60,7 +60,7 @@ const About = () => {
                                 <h3 className="font-semibold text-blue-300">Experience</h3>
                             </div>
                             <p className="text-sm text-gray-300">3 Years Professional</p>
-                            <p className="text-xs text-gray-400">Full Stack Developer</p>
+                            <p className="text-xs text-gray-400">Full Stack Engineer</p>
                         </div>
                     </div>
                 </div>

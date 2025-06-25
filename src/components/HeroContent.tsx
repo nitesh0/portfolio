@@ -18,7 +18,7 @@ const HeroContent = () => {
                 >
                     <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
                     <h1 className="Welcome-text text-[13px]">
-                        Fullstack Developer
+                        Fullstack Engineer
                     </h1>
                 </motion.div>
 
@@ -52,14 +52,14 @@ const HeroContent = () => {
   href="mailto:niteshsinghal9@gmail.com"
   className="py-1 button-primary text-center text-white border border-[#7042f88b] cursor-pointer rounded-lg max-w-[200px]"
 >
-  Let's Work!
+  Let’s Connect!
 </motion.a>
 
             </div>
 
             <motion.div
                 variants={slideInFromRight(0.8)}
-                className="w-full h-full flex justify-center items-center"
+                className="hidden sm:flex w-full h-full justify-center items-center"
             >
                 <img
                     src="/mainIconsdark.svg"
